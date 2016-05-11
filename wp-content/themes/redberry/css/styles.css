@@ -1,0 +1,288 @@
+/**
+* Global styles
+*/
+*, *::before, *::after {
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+body {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+h2, a {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+/*div, ul, li, a {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}*/
+input[type="text"], textarea {
+	cursor: auto;
+}
+input::-webkit-input-placeholder {
+	line-height: 1;
+}
+input:-ms-input-placeholder {
+	line-height: 1;
+}
+input::-moz-placeholder {
+	line-height: 1;
+}
+input:-moz-placeholder {
+	line-height: 1;
+}
+
+/**
+* Context-Free Classes
+*/
+.ka-adaptive-img {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.ka-clearfix::after {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+	height: 0;
+	font-size: 0;
+}
+.ka-clearfix {
+	display: inline-block;
+}
+
+.ka-bg-contain {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.ka-bg-cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/**
+* Pagination
+*/
+
+.ka-pager {
+	margin: 60px auto 0;
+	overflow: hidden;
+	text-align: center;
+}
+.page-numbers {
+	display: inline-block;
+}
+.ka-pager li {
+	float: left;
+}
+.ka-pager a,
+.ka-pager span {
+	display: block;
+	position: relative;
+	margin: 0 8px 0 4px;
+	font: 30px/1 'nino-mtavruli';
+	color: #068789;
+	text-transform: uppercase;
+}
+.ka-pager span.current {
+	color: #fff100;
+}
+.ka-pager a::after,
+.ka-pager span::after {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	right: -6px;
+	z-index: 1;
+	width: 2px;
+	height: 6px;
+	background-color: #068789;
+	-webkit-transform: rotate(21deg);
+	transform: rotate(21deg);
+}
+.ka-pager a.remove-comma::after,
+.ka-pager span.remove-comma::after {
+	display: none;
+}
+.ka-pager a.prev,
+.ka-pager a.next {
+	width: 14px;
+	height: 22px;
+	margin-top: 1px;
+	background: url('../images/pager-arrow.png') no-repeat 0 0;
+	text-indent: -50000px;
+}
+.ka-pager a.prev {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/**
+* Share Buttons For Social Networks
+*/
+
+.ka-social-buttons {
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.facebook,
+.twitter,
+.google-plus {
+	position: relative;
+	text-indent: -555555px;
+	width: 37px;
+	height: 37px;
+	float: left;
+	cursor: pointer;
+}
+.facebook,
+.twitter,
+.google-plus {
+	margin-right: 14px;
+}
+
+.facebook::after,
+.twitter::after,
+.google-plus::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: background 250ms ease;
+	transition: background 250ms ease;
+}
+.facebook::after {
+	background: url('../images/facebook.png') no-repeat 0 0 / cover;
+}
+.twitter::after {
+	background: url('../images/twitter.png') no-repeat 0 0 / cover;
+}
+.google-plus::after {
+	background: url('../images/google-plus.png') no-repeat 0 0 / cover;
+}
+
+.facebook:hover::after {
+	background-position: 0 -67px;
+}
+.twitter:hover::after {
+	background-position: 0 -67px;
+}
+.google-plus:hover::after {
+	background-position: 0 -67px;
+}
+
+/* Editor Styles */
+
+.rb-editor {
+	margin-top: 30px;
+	color: #a8a8a8;
+}
+.rb-editor h1,
+.rb-editor h2,
+.rb-editor h3,
+.rb-editor h4,
+.rb-editor h5,
+.rb-editor h6 {
+	margin-bottom: 25px;
+	font-family: 'nino-mtavruli';
+	color: #737477;
+}
+.rb-editor h1 {
+	font-size: 32px;
+}
+.rb-editor h2 {
+	font-size: 30px;
+}
+.rb-editor h3 {
+	font-size: 28px;
+}
+.rb-editor h4 {
+	font-size: 26px;
+}
+.rb-editor h5 {
+	font-size: 24px;
+}
+.rb-editor h6 {
+	font-size: 22px;
+}
+.rb-editor p {
+	margin: 0 auto 25px;
+}
+.rb-editor a {
+	color: #009496;
+}
+.rb-editor strong {
+	font-weight: bold;
+	color: #737477;
+}
+.rb-editor blockquote {
+	margin-left: 30px;
+}
+.rb-editor em {
+	font-style: italic;
+}
+.rb-editor hr {
+	margin: 0 auto 25px;
+	border-color: #fff;
+}
+.rb-editor ul, ol {
+	margin-bottom: 25px;
+}
+.rb-editor ul li {
+	position: relative;
+	padding-left: 20px;
+}
+.rb-editor ul li::before {
+	content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  background-color: #009496;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.rb-editor ol {
+	padding-left: 28px;
+}
+.rb-editor ol li {
+	padding-left: 6px;
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+.rb-editor > :last-child {
+	margin-bottom: 0;
+}
