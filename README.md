@@ -35,9 +35,9 @@ GUIDE - Steps to customize for some project:
 
 9. In admin panel go to the settings page and click on the 'Save Changes' button.
 
-10. In the theme folder, replace 'screenshot.png' whit your project screenshot.
+10. In the theme folder, replace 'screenshot.png' with your project screenshot.
 
-11. In the theme folder, replace 'favicon.ico' whit your project favicon.
+11. In the theme folder, replace 'favicon.ico' with your project favicon.
 
 ------------------------------------------------------------------------------------------
 
