@@ -26,18 +26,21 @@ GUIDE - Steps to customize for some project:
 5. Open .htaccess file and replace '/wp-reddbery' with '/your-project-name'.
    Replace all occurrences.
 
-6. Rename the theme folder with your project title
+6. Rename the theme folder with your project title.
 
 7. Open 'style.css' and change 'Theme name' option value with your theme folder
    title.
 
 8. Login to the admin panel and activate the theme with your theme name (ignore error).
 
-9. In admin panel go to the settings page and click on the 'Save Changes' button.
+9. In admin panel go to the 'settings/permalinks' page and click on the 'Save Changes' button to update
+   permalinks.
 
 10. In the theme folder, replace 'screenshot.png' with your project screenshot.
 
 11. In the theme folder, replace 'favicon.ico' with your project favicon.
+
+12. You can also change site tagline from admin panel 'settings' option.
 
 ------------------------------------------------------------------------------------------
 

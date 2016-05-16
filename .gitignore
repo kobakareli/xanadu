@@ -1,8 +1,8 @@
-*.log
+#*.log
 #.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
+#sitemap.xml
+#sitemap.xml.gz
+#wp-config.php
 #wp-content/advanced-cache.php
 #wp-content/backup-db/
 #wp-content/backups/
@@ -13,5 +13,5 @@ wp-config.php
 #wp-content/wp-cache-config.php
 #wp-content/plugins/hello.php
 
-/readme.html
-/license.txt
+#/readme.html
+#/license.txt
