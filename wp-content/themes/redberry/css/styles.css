@@ -35,22 +35,22 @@ a {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}*/
-input[type="text"], textarea {
-	cursor: auto;
-}
-input::-webkit-input-placeholder {
-	line-height: 1;
-}
-input:-ms-input-placeholder {
-	line-height: 1;
-}
-input::-moz-placeholder {
-	line-height: 1;
-}
-input:-moz-placeholder {
-	line-height: 1;
-}
+	}*/
+	input[type="text"], textarea {
+		cursor: auto;
+	}
+	input::-webkit-input-placeholder {
+		line-height: 1;
+	}
+	input:-ms-input-placeholder {
+		line-height: 1;
+	}
+	input::-moz-placeholder {
+		line-height: 1;
+	}
+	input:-moz-placeholder {
+		line-height: 1;
+	}
 
 /**
 * Context-Free Classes
@@ -77,11 +77,17 @@ input:-moz-placeholder {
 .ka-bg-contain {
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: contain;
 }
 .ka-bg-cover {
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -263,17 +269,17 @@ input:-moz-placeholder {
 }
 .rb-editor ul li::before {
 	content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-  background-color: #009496;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	background-color: #009496;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .rb-editor ol {
 	padding-left: 28px;
