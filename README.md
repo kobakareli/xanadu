@@ -45,7 +45,9 @@ GUIDE - Steps to customize for some project:
 13. After cloning this repository, create a new git repository and use "git push --mirror new repository" :
 
    git clone --bare https://github.com/exampleuser/old-repository.git
-   cd old-repository.git
+   
+   cd old-repository
+   
    git push --mirror https://github.com/exampleuser/new-repository.git
    
    Everything will be uploaded to new repository and then u can clone new repository and enjoy 
