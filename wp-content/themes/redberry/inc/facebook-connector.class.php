@@ -10,9 +10,15 @@ class FacebookConnector {
   private $post_data; // Global $_POST array
   private $reg_results; // Contains validation statuses and messages about registration fields
   private $user_id; // Newly-created user ID
+  private $app_id;
+  private $app_secret;
+  private $access_token;
 
-  public function __construct() {
+  public function __construct($app_id, $app_secret, $access_token) {
     $this->post_data = $_POST;
+	$this->app_id = $app_id;
+	$this->app_secret = $app_secret;
+	$this->access_token = $access_token;
   }
 
   /**
@@ -47,9 +53,9 @@ class FacebookConnector {
   /**
   * @return true|false - true if user logged in or false otherwise
   */
-  public function login($app_id, $app_secret, $access_token) {
+  public function login() {
     // Facebook PHP SDK gets the user data
-    $user_data = $this->getUserDataByAccessToken($app_id, $app_secret, $access_token);
+    $user_data = $this->getUserDataByAccessToken($this->app_id, $this->app_secret, $this->access_token);
 
     if (! empty($user_data)) {
       $this->post_data['data']['email'] = $user_data['email'];
@@ -77,7 +83,7 @@ class FacebookConnector {
       $user = get_user_by('email', $email);
       // If user exists
       if ($user->data) {
-        wp_set_current_user($user->data->ID, $user->data->user_login);
+		wp_set_current_user($user->data->ID, $user->data->user_login);
         wp_set_auth_cookie($user->data->ID);
         return true;
       }
@@ -120,17 +126,13 @@ class FacebookConnector {
   * @param boolean $login - login after registration if gets true. By default is false
   * @return true|false - true on success or false otherwise
   */
-  public function registration($exclude_fields = array(), $login = false) {
+  public function registration($exclude_fields = array()) {
     // Check registration fields
     $this->checkRegFields($exclude_fields);
 
     // If registration fields is valid we can register new user
     if ($this->regFieldsIsValid()) {
       $this->reg_results = $this->registerNewUser($exclude_fields);
-      // If we need to login after registration
-      if ($login) {
-        $this->login();
-      }
     }
     return $this->reg_results;
   }

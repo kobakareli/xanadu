@@ -47,3 +47,61 @@ function contact_form() {
 		die();
 	}
 }
+
+/**
+* Facebook login form
+*
+* Both logged in and not logged in users can send this AJAX request
+*/
+add_action( 'wp_ajax_nopriv_ka_fb_connector', 'ka_fb_connector' );
+add_action( 'wp_ajax_ka_fb_connector', 'ka_fb_connector' );
+
+function ka_fb_connector() {
+	require_once locate_template('inc/facebook-connector.class.php');
+
+  if ( class_exists( 'Kavela\FacebookConnector\FacebookConnector' ) ) {
+    $security_key = 'nsvuiozyu48';
+    $logged_in = false;
+    $reg_results = array();
+    $link = get_site_url() . '/#share';
+    $access_token = isset( $_POST['data']['fb_access_token'] ) ? $_POST['data']['fb_access_token'] : '';
+	$fb_connector = new Kavela\FacebookConnector\FacebookConnector('269900126733148', 'e58e93fe1e425905a5d784e7a487c644', $access_token);
+
+    // Check AJAX referer and verify nonce
+    if ( $fb_connector->validateAjaxCall( $security_key ) ) {
+      // Check if user already logged in
+      if ( ! is_user_logged_in() ) {
+      	// If user through Facebook send us access token
+        if ( ! empty( $access_token ) ) {
+          $logged_in = $fb_connector->login();
+          // If user is not regitered yet, go to registration
+          if ( ! $logged_in ) {
+            // Exclude default fields which is not neccessary in registration process
+            $exclude_fields = array( 'login', 'pass', 'confirm_pass' );
+            // Check if email field is not empty. If empty exclude it
+            if ( empty( $_POST['data']['fb_email'] ) ) {
+              $exclude_fields[] = 'email';
+            }
+            // Get registration results
+            $reg_results = $fb_connector->registration( $exclude_fields );
+            // If new user account created successfully
+            if ( isset( $reg_results['reg_status'] ) && true === $reg_results['reg_status'] ) {
+				// Update user meta data. You can check update result
+				$user_meta_fb_id = $fb_connector->updateUserMeta( 'fb_id' );
+				$user_meta_fb_link = $fb_connector->updateUserMeta( 'fb_link' );
+				$logged_in = $fb_connector->login();
+            }
+          }
+          else { // If logged in
+            $logged_in = true;
+          }
+        }
+      }
+      else { // User is logged in
+      	$logged_in = true;
+      }
+    }
+  }
+  wp_send_json( array( 'login' => $logged_in, 'reg' => $reg_results, 'link' => $link ) );
+  exit();
+}
