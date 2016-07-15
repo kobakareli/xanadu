@@ -17,17 +17,22 @@ add_action( 'init', 'register_custom_menu' );
 * Add Menu To Top
 */
 function add_site_menu_to_top() {
+	global $wp_admin_bar;
+	global $userdata;
+	
 	if ( current_user_can( 'manage_options' ) ) {
-		global $wp_admin_bar;
-
 		$wp_admin_bar->add_menu( array(
 			'id' => 'menus',
 			'title' => __( 'Menus', 'redberry' ),
 			'href' => admin_url( 'nav-menus.php' )
 			) );
 	}
+	
+	if ( $userdata->ID != 1 ) {
+		$wp_admin_bar->remove_menu('wp-rocket');
+	}
 }
-add_action( 'admin_bar_menu', 'add_site_menu_to_top', 99 );
+add_action( 'admin_bar_menu', 'add_site_menu_to_top', PHP_INT_MAX );
 
 /**
 * Remove Links From Admin Bar
@@ -75,6 +80,11 @@ function remove_pages_and_subpages() {
 		remove_submenu_page( 'woocommerce', 'wc-settings'); // Woocommerce Settings
 		remove_submenu_page( 'woocommerce', 'wc-status' ); // Woocommerce Status
 		remove_submenu_page( 'scx_console', 'scx_console-options' ); // Chat
+		
+		//remove wp-rocket metaboxes from page and other content types
+		remove_meta_box( 'rocket_post_exclude', 'page', 'side' );
+		//remove_meta_box( 'rocket_post_exclude', 'event', 'side' );
+		//remove_meta_box( 'rocket_post_exclude', 'tent', 'side' );
 	}
 }
 add_action( 'admin_menu', 'remove_pages_and_subpages', 999, 0 );
