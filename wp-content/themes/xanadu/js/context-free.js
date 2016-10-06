@@ -1,7 +1,7 @@
 // Global Scope
 var dotdotdotSelectors = new Array(
   '.ka-product-title',
-  '.ka-product-desc',
+  '.ka-product-desc'
   ).join(', ');
 
 /**

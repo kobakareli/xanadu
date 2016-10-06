@@ -158,7 +158,7 @@ Redirectmatch 403 Table\/Latest\/index\.
 <IfModule mod_rewrite.c>
 RewriteCond %{REQUEST_METHOD} POST
 RewriteCond %{REQUEST_URI} ^(.*)?wp-comments-post\.php(.*)$
-RewriteCond %{HTTP_REFERER} !^http://localhost/wp-redberry [NC,OR]
+RewriteCond %{HTTP_REFERER} !^http://localhost/xanadu [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^$
 RewriteRule .* http://127.0.0.1 [L]
 </IfModule>
@@ -169,7 +169,7 @@ RewriteEngine on
 RewriteCond %{HTTP_REFERER} !^$
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g?|png)$ [NC]
-RewriteCond %{HTTP_REFERER} !^http://localhost/wp-redberry [NC]
+RewriteCond %{HTTP_REFERER} !^http://localhost/xanadu [NC]
 RewriteRule \.(gif|jpe?g?|png)$ - [F,NC,L]
 </IfModule>
 #AIOWPS_PREVENT_IMAGE_HOTLINKS_END
@@ -178,33 +178,33 @@ RewriteRule \.(gif|jpe?g?|png)$ - [F,NC,L]
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /wp-redberry/
+RewriteBase /xanadu/
 RewriteRule ^index\.php$ - [L]
-RewriteRule ^modules/ddda1742/(.*) /wp-redberry/wp-content/plugins/admin-columns-pro/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/18da2fc8/(.*) /wp-redberry/wp-content/plugins/advanced-custom-fields-pro/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/f8271fe0/(.*) /wp-redberry/wp-content/plugins/all-in-one-seo-pack/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/6fc6f83e/(.*) /wp-redberry/wp-content/plugins/all-in-one-wp-security-and-firewall/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/92ecb145/(.*) /wp-redberry/wp-content/plugins/backupwordpress/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/9698118c/(.*) /wp-redberry/wp-content/plugins/cac-addon-acf/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/4295296e/(.*) /wp-redberry/wp-content/plugins/custom-post-type-ui/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/d3576d34/(.*) /wp-redberry/wp-content/plugins/sitepress-multilingual-cms/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/969b2938/(.*) /wp-redberry/wp-content/plugins/ultimate-branding/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/c744996e/(.*) /wp-redberry/wp-content/plugins/worderbypress/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^lib/(.*) /wp-redberry/wp-includes/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^file/(.*) /wp-redberry/wp-content/uploads/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^modules/(.*) /wp-redberry/wp-content/plugins/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^website/main\.css /wp-redberry//index.php?style_wrapper=1&YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^website/style.css /wp-redberry/nothing_404_404?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^website/(.*) /wp-redberry/wp-content/themes/redberry/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^ajax /wp-redberry/wp-admin/admin-ajax.php?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^inc/(.*) /wp-redberry/wp-content/$1?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^wp-content/themes/redberry/screenshot\.png|readme\.html|license\.txt|wp-content/debug\.log|wp-includes/$ /wp-redberry/nothing_404_404?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^(((wp-content|wp-includes)/([A-Za-z0-9\-\_\/]*))|(wp-admin/(!network\/?)([A-Za-z0-9\-\_\/]+)))(\.txt|/)$ /wp-redberry/nothing_404_404?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^(index\.php|wp-comments-post\.php|wp-includes/js/tinymce/wp-tinymce\.php|xmlrpc\.php|wp-cron\.php|wp-admin/upgrade\.php|wp-login\.php|index\.php|wp-admin/)(.*) $1$2?YDM_hide_my_wp=1234 [QSA,L]
-RewriteRule ^(.*)\.php(.*) /wp-redberry/nothing_404_404?YDM_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/a9f8f4b8/(.*) /xanadu/wp-content/plugins/admin-columns-pro/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/8b0cad31/(.*) /xanadu/wp-content/plugins/advanced-custom-fields-pro/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/0a95071f/(.*) /xanadu/wp-content/plugins/all-in-one-seo-pack/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/b73eb898/(.*) /xanadu/wp-content/plugins/all-in-one-wp-security-and-firewall/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/9472166c/(.*) /xanadu/wp-content/plugins/backupwordpress/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/3aa49001/(.*) /xanadu/wp-content/plugins/cac-addon-acf/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/b0273191/(.*) /xanadu/wp-content/plugins/custom-post-type-ui/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/0c087d71/(.*) /xanadu/wp-content/plugins/sitepress-multilingual-cms/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/e2b9cac2/(.*) /xanadu/wp-content/plugins/ultimate-branding/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/6b7818e3/(.*) /xanadu/wp-content/plugins/worderbypress/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^lib/(.*) /xanadu/wp-includes/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^file/(.*) /xanadu/wp-content/uploads/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^modules/(.*) /xanadu/wp-content/plugins/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^website/main\.css /xanadu//index.php?style_wrapper=1&BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^website/style.css /xanadu/nothing_404_404?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^website/(.*) /xanadu/wp-content/themes/xanadu/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^ajax /xanadu/wp-admin/admin-ajax.php?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^inc/(.*) /xanadu/wp-content/$1?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^wp-content/themes/xanadu/screenshot\.png|readme\.html|license\.txt|wp-content/debug\.log|wp-includes/$ /xanadu/nothing_404_404?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^(((wp-content|wp-includes)/([A-Za-z0-9\-\_\/]*))|(wp-admin/(!network\/?)([A-Za-z0-9\-\_\/]+)))(\.txt|/)$ /xanadu/nothing_404_404?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^(index\.php|wp-comments-post\.php|wp-includes/js/tinymce/wp-tinymce\.php|xmlrpc\.php|wp-cron\.php|wp-admin/upgrade\.php|wp-login\.php|index\.php|wp-admin/)(.*) $1$2?BRiv_hide_my_wp=1234 [QSA,L]
+RewriteRule ^(.*)\.php(.*) /xanadu/nothing_404_404?BRiv_hide_my_wp=1234 [QSA,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wp-redberry/index.php [L]
+RewriteRule . /xanadu/index.php [L]
 </IfModule>
 
 # END WordPress

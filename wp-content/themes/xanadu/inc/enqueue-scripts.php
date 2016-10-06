@@ -28,6 +28,12 @@ function redberry_scripts() {
 	wp_register_script( 'fit_text_js', $uri . '/js/jquery.fit-text.js', array( 'jquery' ), '1' );
 	// Flexslider JS
 	wp_register_script( 'flexslider_js', $uri . '/js/vendor/jquery.flexslider.js', array( 'jquery' ), '1' );
+	// Owl Carousel
+	wp_register_script( 'owl_carousel_js', $uri . '/js/vendor/owl.carousel.js', array( 'jquery' ), '1' );
+	// Owl Carousel
+	wp_register_script( 'instafeed_js', $uri . '/js/vendor/instafeed.min.js', array( 'jquery' ), '1' );
+	// Isotope
+	wp_register_script( 'isotope_js', $uri . '/js/vendor/isotope.pkgd.min.js', array( 'jquery' ), '1' );
 	// Modernizr JS
 	wp_register_script( 'modernizr_js', $uri . '/js/vendor/modernizr.js', array( 'jquery' ), '1' );
 	// DotDotDot JS
@@ -49,6 +55,12 @@ function redberry_scripts() {
 	wp_enqueue_script( 'fit_text_js' );
 	// Flexslider JS
 	wp_enqueue_script( 'flexslider_js' );
+	// Owl carousel JS
+	wp_enqueue_script( 'owl_carousel_js' );
+	// Instafeed JS
+	wp_enqueue_script( 'instafeed_js' );
+	// Isotope JS
+	wp_enqueue_script( 'isotope_js' );
 	// Modernizr JS
 	wp_enqueue_script( 'modernizr_js' );
 	// DotDotDot JS

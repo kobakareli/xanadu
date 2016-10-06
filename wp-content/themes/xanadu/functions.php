@@ -33,6 +33,16 @@ require $path_to_theme . '/inc/ajax-forms-handler.php';
 // Modify Relevanssi
 // require $path_to_theme . '/inc/modify-relevanssi.php';
 
+
+add_theme_support( 'post-thumbnails' );
+
+// limit excerpt length
+function custom_excerpt_length( $length ) {
+	return 19;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
 /**
 * FIX WPML and WP Compatibility Issue. When post is duplicated (identical slugs) and after that
 * the slug is modified, old slug is kept as _wp_old_slug and when accessed post in default language,

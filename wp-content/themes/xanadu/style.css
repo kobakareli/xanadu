@@ -1,0 +1,2077 @@
+/**
+ * Theme name: Xanadu
+ * Author: RedBerry
+ * Author URI: http://redberry.ge
+ * Description: Client website made by RedBerry
+ * Version: 1.0
+ */
+
+h1, h2, h3, p, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    float: left;
+    margin: 20px 10px 20px 0;
+    font-weight: bold;
+}
+
+header ul.contact {
+    display: inline-block;
+    margin-left: 4.1%;
+    padding-left: 0;
+}
+
+header ul.user {
+    margin-right: 4.1%;
+    float: right;
+}
+
+header ul.contact li {
+    padding-left: 0;
+}
+
+header ul.contact a {
+    text-decoration: none;
+	border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: #bc9e6b;
+    padding: 0 10px 0 0;
+    color: #bc9e6b;
+}
+
+header ul.contact li:last-child a {
+    border-right-style: none;
+    text-decoration: none;
+    color: #000000;
+    padding-right: 0;
+}
+
+
+header ul.contact li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+header ul.user li {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0;
+	border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: lightgray;
+}
+
+header ul.user li:last-child {
+    border-right-style: none;
+    padding-right: 0;
+}
+
+header .user a:hover, header .user a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+
+header .nav {
+    position: relative;
+    clear: both;
+    height: 160px;
+    padding: 25px 0;
+    margin-left: 4.1%;
+    margin-right: 4.1%;
+    text-align: left;
+}
+
+header .title {
+    display: inline-block;
+    width: 222px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+header .nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header .title h1 {
+    color: #bc9e6b;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+}
+
+header .title span {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+header .title span::before {
+    content: '';
+    margin-right: 5px;
+    display: inline-block;
+    background: #bc9e6b;
+    width: 18.5%;
+    height: 3px;
+    vertical-align: middle;
+}
+
+header .title span::after {
+    content: '';
+    margin-left: 5px;
+    display: inline-block;
+    background: #bc9e6b;
+    width: 18.5%;
+    height: 3px;
+    vertical-align: middle;
+}
+
+.menu {
+    clear: both;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu ul {
+    padding-left: 0;
+}
+
+.menu ul li {
+    margin-right: 30px;
+    font-size: 1.2rem;
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown {
+	cursor: pointer;
+}
+
+.dropbtn {
+	text-decoration: none;
+    background-color: white;
+    border: none;
+}
+
+.dropbtn::after {
+    content: "";
+    margin-left: 6px;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/dropdown.png');
+    background-size: 100% 100%;
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropbtn:focus {
+    outline: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-m {
+    display: none;
+    font-weight: bold;
+}
+
+.drop-menu-btn {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+.drop-menu-btn::after {
+    content: "";
+    margin-left: 6px;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/dropdown.png');
+    background-size: 100% 100%;
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.drop-menu-btn:focus {
+    outline: 0;
+}
+
+.dropdown-menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown2 {
+	padding: 12px 16px 12px 2px;
+}
+
+.dropdown-menu-content a:hover, .dropdown-menu-content .dropdown2:hover, .dropdown-menu-content .dropdown2:hover button {
+    background-color: #f1f1f1
+}
+
+.dropdown-menu-content a:not(.dropbtn-menu) {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn-menu {
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+    margin: 12px 16px 12px 2px;
+	cursor: pointer;
+}
+
+.dropbtn-menu::before {
+    content: "";
+    margin-left: 6px;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/dropdown.png');
+    background-size: 100% 100%;
+    width: 8px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(90deg);
+}
+
+.dropbtn-menu:focus {
+    outline: 0;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 160px;
+    top: 160px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #f1f1f1
+}
+
+
+.cart {
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon {
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    margin-top: -10px;
+}
+
+.search-input {
+    display: none;
+    margin-right: 20px;
+    float: left;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    margin-top: -15px;
+}
+
+.search-input:focus {
+    outline-color: #bc9e6b;
+}
+
+.cart-details {
+    float: left;
+    display: inline-block;
+	border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #bc9e6b;
+    padding-left: 15px;
+    width: 180px;
+    text-align: left;
+    margin: 0;
+}
+
+.cart-details p {
+    font-weight: bold;
+	margin-top: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cart-details span.inline {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.cart-details img {
+    margin-top: 2px;
+    margin-right: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+}
+
+.cart-details .price {
+    color: #bc9e6b;
+}
+
+.flexslider {
+    margin: 0 1.5%;
+    max-height: 750px;
+    max-width: 97%;
+    background-color: #dadbdd;
+    border: none;
+}
+
+.flexslider.main .slides img {
+    height: 750px;
+}
+
+.flexslider.main .slides {
+    text-align: center;
+}
+
+.flexslider.main .slides .slider-text {
+    display: inline-block;
+    position: absolute;
+    top: 138px;
+    transform: translateX(-50%);
+}
+
+.flexslider.main .slides h1 {
+    font-size: 4em;
+    margin-bottom: 34px;
+    font-family: "Playfair Display", serif;
+    color: #bc9e6b;
+}
+
+.flexslider.main .slides p {
+    font-size: 1.6em;
+    margin-bottom: 64px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flexslider.main .slides span {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 50px;
+    border-style: solid;
+    border-width: 1px;
+    color: #bc9e6b;
+    border-color: #bc9e6b;
+}
+
+.flex-direction-nav a:before {
+    content: " ";
+    display: block;
+    background: url('http://localhost/xanadu/inc/uploads/2016/10/prev.png') no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.flex-direction-nav a.flex-next {
+    right: 1px;
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: " ";
+    display: block;
+    background: url('http://localhost/xanadu/inc/uploads/2016/10/next.png') no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.flex-control-nav {
+    display: none;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 30px 80px 30px;
+    min-height: 215px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+}
+
+.info div {
+    text-align: center;
+}
+
+.info div .section-title {
+    font-weight: bold;
+    margin-top: 19px;
+    margin-bottom: 12px;
+}
+
+.info div.vertical-line {
+    height: 80px;
+    width: 1px;
+    border-width: 1px;
+    border-left-style: solid;
+    border-left-color: #eaeaea;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+.new-arrivals {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.new-arrivals .categories {
+    margin-top: 34px;
+	margin-bottom: 15px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.new-arrivals .categories li {
+    float: left;
+    margin-right: 34px;
+    font-size: 1.3em;
+}
+
+.new-arrivals .categories li:last-child {
+    margin-right: 0;
+}
+
+.new-arrivals .categories li a {
+    text-decoration: none;
+    color: black
+}
+
+.new-arrivals .categories .selected a {
+    color: #bc9e6b;
+}
+
+.new-arrivals .select-new-arrivals {
+    display: none;
+    width: 300px;
+    height: 50px;
+    margin: 30px auto;
+}
+
+#owl-demo {
+    display: inline-block;
+    height: 370px;
+}
+
+.owl-wrapper-outer, .owl-wrapper {
+    height: 370px;
+}
+
+#owl-demo .item {
+    position: relative;
+    background: #f7f7f7;
+    padding: 0px 0px;
+    margin: 5px;
+    color: #000000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    width: 345px;
+    height: 345px;
+    text-align: left;
+}
+
+#owl-demo .owl-wrapper-outer .owl-wrapper .owl-item .item a {
+    display: inline-block;
+}
+
+#owl-demo .owl-wrapper-outer .owl-wrapper .owl-item .item a:not(.main) {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+#owl-demo .owl-wrapper-outer .owl-wrapper .owl-item .item a.main {
+    height: 345px;
+}
+
+#owl-demo .item.selected {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.owl-carousel .item .wishlist, .owl-carousel .item .wishlist img {
+    display: none;
+}
+
+.owl-carousel .item .quick-look, .owl-carousel .item .quick-look img {
+    display: none;
+}
+
+.owl-carousel .item .cart, .owl-carousel .item .cart img {
+    display: none;
+}
+
+.owl-carousel .item .wishlist {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.owl-carousel .item .quick-look {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.owl-carousel .item .cart {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 51px;
+}
+
+.owl-carousel .item .plus {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+
+.owl-carousel .item.selected .wishlist, .owl-carousel .item.selected .wishlist img {
+    display: inline-block;
+}
+
+.owl-carousel .item.selected .quick-look, .owl-carousel .item.selected .quick-look img {
+    display: inline-block;
+}
+
+.owl-carousel .item.selected .cart, .owl-carousel .item.selected .cart img {
+    display: inline-block;
+}
+
+.owl-carousel .item.selected .plus {
+    display: inline-block;
+}
+
+.owl-carousel .item img.main-image {
+    width: 100%;
+    height: 245px;
+}
+
+.owl-carousel .item p {
+    position: absolute;
+    top: 240px;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 1.5em;
+	white-space: nowrap;
+}
+
+.owl-carousel .item span {
+    position: absolute;
+    margin-left: 30px;
+    color: #bc9e6b;
+    top: 300px;
+}
+
+.owl-carousel .item span span {
+    position: relative;
+    text-decoration: line-through;
+    color: #000000;
+    font-size: 0.8em;
+    margin: 0;
+    top: -1px;
+}
+
+.owl-prev, .owl-next {
+    position:absolute;
+    top:50%;
+    padding:5px;
+    margin:0;
+    z-index:100;
+    font-size:3rem;
+    cursor:pointer;
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+    color: white;
+    display: inline-block;
+    zoom: 1;
+    font-size: 3rem;
+    border-radius: 0px;
+    background-color: #919191;
+    opacity: 0.8;
+    margin-top:-32px;
+    font-size: 2em;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/white-prev.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 50px;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+    opacity: 1;
+}
+
+.owl-prev {
+    left: 0px;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+    right: 0px;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/white-next.png');
+}
+
+.new-arrivals .view-all {
+    display: inline-block;
+	text-decoration: none;
+    width: 180px;
+    height: 40px;
+    margin-top: 60px;
+    margin-botom: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bc9e6b;
+}
+
+.new-arrivals .view-all p {
+    color: #bc9e6b;
+    font-size: 1.5em;
+	vertical-align: middle;
+	margin-top: 8px;
+}
+
+.banners {
+    background: white;
+    margin-top: 60px;
+    margin-bottom: 110px;
+    height: 380px;
+}
+
+.banners .banner {
+    display: inline-block;
+    width: 47.675%;
+    height: 380px;
+    float: left;
+    margin-right: 1.55%;
+}
+
+.banners .banner.first {
+    margin-left: 1.55%;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/banner-1-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banners .banner.first p {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    color: #459ec0;
+    margin-left: 108px;
+    line-height: 1em;
+}
+
+.banners .banner.first hr {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin-left: 108px;
+	border: none;
+}
+
+.banners .banner.first hr:first-of-type {
+    width: 150px;
+}
+
+.banners .banner.first p:first-child {
+    margin-top: 78px;
+}
+
+.banners .banner.second {
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/banner-2-image.png');
+    background-size: cover;
+}
+
+.banners .banner.second p {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    color: #c97f99;
+    margin-left: 118px;
+    line-height: 1em;
+}
+
+.banners .banner.second p:first-child {
+    margin-top: 100px;
+}
+
+.banners .banner.second hr {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin-left: 118px;
+	border: none;
+}
+
+.banners .banner.second hr:first-of-type {
+    width: 150px;
+}
+
+.special-offers {
+    position: relative;
+}
+
+.special-offers .circles img {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.special-offers .flexslider {
+    display: inline-block;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 62%;
+    height: 605px;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-bottom: 115px;
+}
+
+.special-offers .flexslider .flex-viewport .slides img {
+    display: inline-block;
+    width: 48%;
+    height: 575px;
+    float: left;
+    z-index: -1;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 8px 8px 8px rgba(0,0,0,0.2);
+}
+
+.special-offers .right {
+    display: inline;
+}
+
+.special-offers .right .text {
+    display: inline-block;
+    position: relative;
+    top: 55px;
+    left: 30px;
+}
+
+.special-offers .right .text h2 {
+    font-family: "Playfair Display", serif;
+	font-size: 2em;
+    margin: 0;
+}
+
+.special-offers .right .text p:first-of-type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.7em;
+    font-weight: bold;
+    color: #bc9e6b;
+    margin: 0;
+}
+
+.special-offers .right .text p:last-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+}
+
+.special-offers .right .countdown {
+    position: relative;
+    background-color: #333333;
+    width: 54.2%;
+    height: 180px;
+    z-index: 10;
+    right: -40%;
+    top: 80px;
+}
+
+.special-offers .right .countdown .flex {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.special-offers .right .countdown .flex div {
+    text-align: center;
+}
+
+.special-offers .right .countdown .flex .line {
+    display: inline-block;
+    height: 80px;
+    width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #ffffff;
+}
+
+.special-offers .right .countdown .flex .days {
+    margin-left: 90px;
+}
+
+.special-offers .right .countdown .flex .seconds {
+    margin-right: 90px;
+}
+
+.special-offers .right .countdown .flex p {
+    margin: 0;
+}
+
+.special-offers .right .countdown .flex p:first-child {
+    color: #97815c;
+    font-size: 3.5em;
+    line-height: 0.8em;
+}
+
+.special-offers .right .countdown .flex p:last-child {
+    color: white;
+    font-size: 1em;
+}
+
+.special-offers .flexslider .flex-direction-nav .flex-prev {
+    position: absolute;
+    top: 500px;
+    left: 53%;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+    background-color: #333333;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/white-prev.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-offers .flexslider .flex-direction-nav .flex-next {
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: 60.5%;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+    background-color: #333333;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/white-next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reviews {
+    display: inline-block;
+    width: 96.9%;
+    margin: 0 1.55% 60px 1.55%;
+    min-height: 470px;
+    text-align: center;
+    background-color: #636363;
+    background-image: url('http://localhost/xanadu/inc/uploads/2016/10/leaves.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reviews .users {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 86px;
+    width: 530px;
+    margin: 88px auto;
+    margin-bottom: 0;
+}
+
+.reviews .users div {
+    width: 70px;
+    height: 70px;
+    background: lightgray;
+    border-radius: 50%;
+    float: left;
+    display: block;
+    margin-right: 20px;
+}
+
+.reviews .users div:last-child {
+    margin-right: 0px;
+}
+
+.reviews .users .transparent {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.reviews .users div:hover {
+    animation: enlarge 0.2s forwards;
+}
+
+.reviews .users .transparent:hover {
+    display: none;
+}
+
+@keyframes enlarge {
+    from {width: 70px; height: 70px;}
+    to {width: 86px; height: 86px;}
+}
+
+.reviews .review-content {
+    display: none;
+    width: 45%;
+    margin: 30px auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.05em;
+}
+
+.reviews hr {
+    width: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #929292;
+}
+
+.reviews .user-name {
+    display: none;
+    color: white;
+    margin-top: 34px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.reviews .user-info {
+    display: none;
+    margin: 0;
+    color: #d6a279;
+    font-size: 1em;
+}
+
+.reviews .review-content.first {
+    display: block;
+}
+
+.reviews .user-name.first {
+    display: block;
+}
+
+.reviews .user-info.first {
+    display: block;
+}
+
+.featured-products {
+    margin: 60px 0px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.featured-products .categories {
+    margin-top: 30px;
+	margin-bottom: 15px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.featured-products .categories li {
+    float: left;
+    margin-right: 34px;
+    font-size: 1.3em;
+    padding: 0;
+}
+
+.featured-products .categories li:last-child {
+    margin-right: 0;
+}
+
+.featured-products .categories li a {
+    text-decoration: none;
+    color: black
+}
+
+.featured-products .categories .selected a {
+    color: #bc9e6b;
+}
+
+.featured-products .select-categories {
+    display: none;
+    width: 300px;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.grid {
+    margin-left: 19.5%;
+    margin-right: 19.5%;
+    text-align: center;
+    align-content: center;
+}
+
+.featured-products .grid .grid-item {
+    background: #ffffff;
+    padding: 0px 0px;
+    margin: 5px;
+    color: #000000;
+    text-align: center;
+    width: 170px;
+    height: 240px;
+    text-align: center;
+    padding-right: 10px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: lightgray;
+}
+
+
+.featured-products .grid .grid-item img {
+    margin: 0;
+    width: 100%;
+    height: 170px;
+}
+
+.featured-products .grid .grid-item p {
+    margin: 0;
+    margin-top: 25px;
+}
+
+.featured-products .grid .grid-item span {
+    margin: 0;
+    color: #bc9e6b;
+}
+
+.featured-products .grid .grid-item span span {
+    text-decoration: line-through;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+.featured-products .grid .line {
+    height: 170px;
+    width: 1px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: gray;
+}
+
+.featured-products .view-all {
+    margin-top: 60px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 55px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bc9e6b;
+    color: #bc9e6b;
+}
+
+.news {
+    margin-left: 19.5%;
+    margin-right: 19.5%;
+    height: 460px;
+    margin-bottom: 50px;
+}
+
+.news .letter {
+    display: inline-block;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #bc9e6b;
+    width: 50%;
+    height: 460px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+}
+
+.news .letter h2 {
+    margin-top: 88px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+	font-size: 2em;
+    color: #333333;
+}
+
+.news .letter hr {
+    border-width: 1px;
+    border-type: solid;
+    border-color: #333333;
+    width: 70px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.news .letter div {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.news .letter div p {
+	line-height: 1.5em;
+}
+
+.news .letter .email {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    text-align: center;
+	height: 30px;
+}
+
+.news .letter .email:focus {
+    outline-color: #bc9e6b;
+}
+
+.news .letter button {
+    padding: 10px 45px;
+    background-color: #bc9e6b;
+    color: #ffffff;
+    outline: 0;
+    border: none;
+}
+
+.news .latest {
+    display: inline-block;
+    width: 50%;
+    height: 460px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+.news .latest h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #333333;
+    line-height: 85%;
+	font-size: 2em;
+}
+
+.news .latest hr {
+    border-width: 1px;
+    border-type: solid;
+    border-color: #bc9e6b;
+    width: 80px;
+    margin-left: 0;
+    margin-bottom: 42px;
+}
+
+.news .latest .timeline {
+    width: 100%;
+}
+
+.news .latest .timeline .entry {
+    display: inline-block;
+}
+
+.news .latest .timeline .entry:first-child {
+    display: inline-block;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #eaeaea;
+    margin-bottom: 35px;
+}
+
+.news .latest .timeline .entry .date {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 20%;
+    float: left;
+	text-align: center;
+}
+
+.news .latest .timeline .entry .date h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.news .latest .timeline .entry .date p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.news .latest .timeline .entry .content {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+
+.news .latest .timeline .entry .content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.news .latest .timeline .entry .content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0;
+}
+
+.news .latest .timeline .entry .content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #bc9e6b;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 19.5%;
+    margin-right: 19.5%;
+    height: 100px;
+}
+
+.logos img {
+    width: 100%;
+    height: 100px;
+}
+
+#instafeed {
+    position: absolute;
+    display: flex;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: 97%;
+    height: 233px;
+    margin-top: 50px;
+}
+
+#instafeed .bg {
+    height: 100%;
+    width: 100%;
+}
+
+#instafeed img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#instafeed a.follow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    background-color: #e6e6e6;
+}
+
+#instafeed a.follow span {
+    position: relative;
+    display: inline-block;
+    color: #b1b1b1;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#instafeed a.follow span:before {
+    content: url('http://localhost/xanadu/inc/uploads/2016/10/instagram-icon.png');
+    display: inline-block;
+    position: relative;
+    transform: translateY(15%);
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+footer {
+    position: relative;
+    top: 283px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    /*padding-left: 18%;
+    padding-right: 18%;*/
+    margin-bottom: 30px;
+    height: 476px;
+    background-color: #333333;
+}
+
+footer .about {
+    position: absolute;
+    left: 18%;
+    display: inline-block;
+    width: 470px;
+    height: 100%;
+    float: left;
+    /*margin-right: 20px;*/
+}
+
+footer .about .logo {
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+
+footer .about p:first-of-type {
+    color: #949494;
+    font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+footer .about .address {
+    margin-top: 30px;
+    color: #e4e4e4;
+}
+
+footer .about .address:before {
+    content: '';
+    background: url('http://localhost/xanadu/inc/uploads/2016/10/location.png');
+    padding-right: 40px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .about .number {
+    margin-top: 20px;
+    color: #e4e4e4;
+}
+
+footer .about .number::before {
+    content: '';
+    background: url('http://localhost/xanadu/inc/uploads/2016/10/dialer.png');
+    padding-right: 40px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .about .email {
+    margin-top: 20px;
+    color: #e4e4e4;
+}
+
+footer .about .email::before {
+    content: '';
+    background: url('http://localhost/xanadu/inc/uploads/2016/10/message.png');
+    padding-right: 40px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .about img:last-child {
+	margin-top: 20px;
+}
+
+footer .working-hours, footer .shopping, footer .more-links {
+    position: relative;
+    display: inline-block;
+    left: 45%;
+    width: 200px;
+    height: 100%;
+    float: left;
+    margin-right: 100px;
+}
+
+footer .shopping {
+    position: relative;
+    width: 170px;
+    margin-right: 30px;
+}
+
+footer .more-links {
+    position: relative;
+    width: 170px;
+    margin-right: 0;
+}
+
+footer .working-hours h3, footer .shopping h3, footer .more-links h3 {
+    margin-top: 65px;
+    color: #ffffff;
+	font-size: 1.6em;
+	font-family: 'Roboto', sans-serif;
+}
+
+footer .working-hours p, footer .shopping a, footer .more-links a {
+    display: block;
+    color: #9c9c9c;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+footer .working-hours hr, footer .shopping hr, footer .more-links hr {
+    width: 55px;
+    border-width: 1px;
+    border-color: #bc9e6b;
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 55px;
+}
+
+footer .copyright {
+    color: #4a4a4a;
+    position: absolute;
+    left: 18%;
+    margin: 0;
+    bottom: 20px;
+}
+
+footer .payment {
+    position: absolute;
+    margin: 0;
+    bottom: 15px;
+    right: 19.5%;
+}
+
+@media (max-width: 1808px) {
+    #owl-demo .item {
+        width: 270px;
+        height: 270px;
+    }
+
+    .owl-carousel .item img.main-image {
+        height: 170px;
+    }
+
+    .owl-carousel .item p {
+        top: 200px;
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 1.2em;
+    }
+
+    .owl-carousel .item span {
+        margin-left: 15px;
+        font-size: 0.8em;
+        top: 240px;
+    }
+
+    .owl-carousel .item span span {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 1780px) {
+    footer {
+        top: 209px;
+        height: 900px;
+    }
+
+    footer .about {
+        width: 350px;
+    }
+
+    footer .working-hours {
+        left: 60%;
+        height: 380px;
+    }
+
+    footer .shopping {
+        float: none;
+        position: absolute;
+        left: 18%;
+        top: 450px;
+        height: 380px;
+        display: inline-block;
+    }
+
+    footer .more-links {
+        float: none;
+        position: absolute;
+        left: 60%;
+        top: 450px;
+        height: 380px;
+        display: inline-block;
+    }
+
+    footer .copyright {
+        font-size: 0.9em;
+    }
+
+    #instafeed {
+        height: 160px;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    header .nav .menu {
+        display: block;
+        width: 100%;
+        top: 90%;
+        text-align: center;
+    }
+
+    header .nav .menu ul {
+        display: inline-block;
+    }
+
+    header .nav {
+        height: 250px;
+    }
+
+    .new-arrivals .categories li {
+        float: left;
+        margin-right: 20px;
+        font-size: 1.1em;
+    }
+
+    #owl-demo {
+        height: 200px;
+    }
+
+    #owl-demo .item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .owl-carousel .item .wishlist {
+        right: 35px;
+    }
+
+    .owl-carousel .item .quick-look {
+        right: 35px;
+    }
+
+    .owl-carousel .item .cart {
+        right: 36px;
+    }
+
+    .owl-carousel .item img.main-image {
+        height: 140px;
+    }
+
+    .owl-carousel .item p {
+        top: 140px;
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 1.2em;
+    }
+
+    .owl-carousel .item span {
+        margin-left: 15px;
+        font-size: 0.8em;
+        top: 180px;
+    }
+
+    .owl-carousel .item span span {
+        font-size: 0.7em;
+    }
+
+    .special-offers .right .text {
+        top: 30px;
+        left: 20px;
+    }
+
+    .special-offers .right .text h2 {
+        font-size: 1.5em;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides img {
+        height: 450px;
+    }
+
+    .special-offers .right .text p:first-of-type {
+        font-size: 1.5em;
+    }
+
+    .special-offers .right .text p:last-child {
+        font-size: 1.1em;
+    }
+
+    .special-offers .right .countdown {
+        height: 100px;
+        top: 50px;
+    }
+
+    .special-offers .right .countdown .flex p:first-child {
+        font-size: 2.5em;
+    }
+
+    .special-offers .right .countdown .flex p:last-child {
+        font-size: 0.6em;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-prev {
+        left: 53%;
+        top: 400px;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-next {
+        left: 65%;
+        top: 400px;
+    }
+
+    .news {
+        height: 920px;
+    }
+
+    .news .letter {
+        display: block;
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+    }
+
+    .news .latest {
+        display: block;
+        width: 100%;
+        height: 460px;
+		padding-left: 0;
+    }
+}
+
+@media (max-width: 1195px) {
+    .grid {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1100px) {
+    header ul li {
+        font-size: 0.8em;
+    }
+
+    .new-arrivals .categories li {
+        float: left;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+    .banners {
+        height: 800px;
+    }
+
+    .banners a {
+        display: block;
+    }
+
+    .banners .banner {
+        display: inline-block;
+        width: 96.9%;
+        height: 380px;
+        float: none;
+        margin-right: 1.55;
+        margin-left: 1.55%;
+        margin-bottom: 20px;
+    }
+
+    .banners .banner.first {
+        background-image: url('http://localhost/xanadu/inc/uploads/2016/10/banner-1-background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .special-offers .right .text p:last-child {
+        font-size: 0.8em;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides img {
+        height: 300px;
+        margin-top: 15px;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-prev {
+        top: 293px;
+        left: 53%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-next {
+        top: 293px;
+        left: 60.5%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .special-offers .right .countdown .flex p:first-child {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .special-offers .right .countdown .flex p:last-child {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .special-offers .circles img {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .special-offers .circles img.largest, .special-offers .circles img.large {
+        display: none;
+    }
+
+    .special-offers .flexslider {
+        height: 300px;
+    }
+}
+
+@media (max-width: 830px) {
+	
+	header ul.contact li:last-child {
+		margin-right: 0;
+	}
+
+    header ul.contact {
+        position: absolute;
+        display: block;
+        margin-left: 0;
+		text-align: center;
+		font-size: 1.1em;
+        width: 372px;
+        height: 50px;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header ul.user {
+        position: absolute;
+        display: block;
+        margin-right: 0;
+        padding-left: 0;
+        width: 320px;
+        height: 50px;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .nav {
+        position: relative;
+        top: 100px;
+        height: 160px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        text-align: left;
+    }
+
+    header .title {
+        position: absolute;
+        display: block;
+        float: left;
+        height: 80px;
+        width: 222px;
+        margin: 0;
+    }
+
+    header .nav .menu, header .cart {
+        display: none;
+    }
+
+    .dropdown-m {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .flexslider.main {
+        margin-top: 100px;
+    }
+
+    .flexslider.main .slides h1 {
+        font-size: 3em;
+    }
+
+    .banners {
+        display: none;
+    }
+
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .info a {
+        margin-top: 10px;
+        flex-basis: 40%;
+    }
+
+    .info div:nth-child(4) {
+        display: none;
+    }
+
+    .special-offers {
+        margin-top: 100px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        height: 650px;
+    }
+
+    .special-offers .flexslider {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        width: 97%;
+        height: 600px;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides img {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides a:first-child {
+        display: block;
+        position: static;
+        max-height: 400px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right {
+        display: block;
+        margin: 0 20%;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .countdown {
+        top: -95px;
+        left: 150px;
+        width: 62%;
+        height: 80px;
+        font-size: 0.6em;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .countdown .flex .line {
+        height: 40px;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .text {
+        margin-left: 0;
+        top: 0;
+        left: -50px;
+    }
+
+    .special-offers .flexslider .flex-direction-nav {
+        position: relative;
+        top: -60px;
+        width: 100%;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-prev {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateX(-50%);
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-next {
+        position: absolute;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        transform: translateX(50%);
+    }
+
+    .featured-products .select-categories {
+        display: block;
+    }
+
+    .new-arrivals .select-new-arrivals {
+        display: block;
+    }
+
+    .featured-products .categories {
+        display: none;
+    }
+
+    .new-arrivals .categories {
+        display: none;
+    }
+
+    .reviews .users {
+        margin-top: 50px;
+        width: 450px;
+    }
+
+    .reviews .review-content {
+        width: 80%;
+    }
+
+    .news {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    .logos {
+        margin-top: 120px;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-height: 100px;
+        flex-wrap: wrap;
+    }
+
+    .logos a {
+        flex-basis: 33%;
+    }
+
+    #instafeed {
+        margin-top: 120px;
+        flex-wrap: wrap;
+        min-height: 160px;
+    }
+
+    #instafeed .bg {
+        flex-basis: 25%;
+    }
+
+    #instafeed a.follow {
+        bottom: -160px;
+    }
+
+    footer {
+        top: 440px;
+        height: 1600px;
+    }
+
+    footer .about {
+        display: block;
+        position: absolute;
+        width: 350px;
+        height: 420px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer .working-hours {
+        display: block;
+        float: none;
+        position: absolute;
+        left: 50%;
+        top: 400px;
+        height: 380px;
+        width: 350px;
+        transform: translateX(-50%);
+    }
+
+    footer .shopping {
+        float: none;
+        position: absolute;
+        left: 50%;
+        top: 750px;
+        display: inline-block;
+        width: 350px;
+        transform: translateX(-50%);
+    }
+
+    footer .more-links {
+        float: none;
+        position: absolute;
+        left: 50%;
+        top: 1100px;
+        display: block;
+        width: 350px;
+        transform: translateX(-50%);
+    }
+
+    footer .payment {
+        position: absolute;
+        margin: 0 auto;
+        top: 1520px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer .copyright {
+        width: 303px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
