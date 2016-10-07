@@ -274,7 +274,7 @@
 				}
 				?>
 				<div class="review-content <?php echo $filter; ?>">
-					<p><?php the_excerpt(); ?></p>
+					<p><?php the_content(); ?></p>
 				</div>
 			<?php endwhile; wp_reset_postdata(); endif;?>
         <hr>

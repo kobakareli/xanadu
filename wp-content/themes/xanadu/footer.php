@@ -1,11 +1,16 @@
 	<footer>
         <div class="about">
             <img src="http://localhost/xanadu/inc/uploads/2016/10/logo-image.png" class="logo" alt="xanadu logo">
-            <p>We are a global housewares product design company. We bring thought and creativity to everyday items through original design.</p>
+            <p class="about-us">We are a global housewares product design company. We bring thought and creativity to everyday items through original design.</p>
             <p class="address">121 King Street, Melbourne 3000 Australia</p>
-            <p class="number">+61 3 8376 6284</p>
-            <p class="email">hello@xanadu.com</p>
-            <img src="http://localhost/xanadu/inc/uploads/2016/10/social-media.png" class="social-media" alt="social media">
+            <a href="tel: +61383766284"><p class="number">+61 3 8376 6284</p></a>
+            <a href="mailto:hello@xanadu.com"><p class="email">hello@xanadu.com</p></a>
+			<div class="social">
+				<a href=""><img src="http://localhost/xanadu/inc/uploads/2016/10/twitter.png"></a>
+				<a href=""><img src="http://localhost/xanadu/inc/uploads/2016/10/facebook.png"></a>
+				<a href=""><img src="http://localhost/xanadu/inc/uploads/2016/10/dribbble.png"></a>
+				<a href=""><img src="http://localhost/xanadu/inc/uploads/2016/10/instagram.png"></a>
+			</div>
         </div>
         <div class="working-hours">
             <h3>OPENING TIME</h3>

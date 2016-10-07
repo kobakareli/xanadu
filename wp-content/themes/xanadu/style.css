@@ -17,6 +17,7 @@ header a {
 
 header ul {
     list-style-type: none;
+	font-family: 'Roboto', sans-serif;
 }
 
 header ul li {
@@ -94,9 +95,10 @@ header .nav {
 header .title {
     display: inline-block;
     width: 222px;
+	height: auto;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translateY(-50%);
 }
 
 header .nav a {
@@ -107,6 +109,7 @@ header .nav a {
 header .title h1 {
     color: #bc9e6b;
     margin-bottom: 0;
+	margin-top: 0;
     font-family: 'Playfair Display', serif;
     font-size: 3.5em;
 }
@@ -152,6 +155,7 @@ header .title span::after {
 .menu ul li {
     margin-right: 30px;
     font-size: 1.2rem;
+	font-family: 'Roboto', sans-serif;
 }
 
 .menu ul li:last-child {
@@ -218,6 +222,7 @@ header .title span::after {
     border: none;
     font-weight: bold;
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
 }
 
 .drop-menu-btn::after {
@@ -243,6 +248,7 @@ header .title span::after {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+	font-family: 'Roboto', sans-serif;
 }
 
 .dropdown2 {
@@ -307,6 +313,7 @@ header .title span::after {
     align-items: center;
     top: 50%;
     transform: translateY(-50%);
+	font-family: 'Roboto', sans-serif;
 }
 
 .search-icon {
@@ -377,6 +384,7 @@ header .title span::after {
     max-width: 97%;
     background-color: #dadbdd;
     border: none;
+	font-family: 'Roboto', sans-serif;
 }
 
 .flexslider.main .slides img {
@@ -496,6 +504,7 @@ header .title span::after {
 	margin-bottom: 15px;
     display: inline-block;
     list-style-type: none;
+	font-family: 'Roboto', sans-serif;
 }
 
 .new-arrivals .categories li {
@@ -546,6 +555,7 @@ header .title span::after {
     width: 345px;
     height: 345px;
     text-align: left;
+	font-family: 'Roboto', sans-serif;
 }
 
 #owl-demo .owl-wrapper-outer .owl-wrapper .owl-item .item a {
@@ -633,14 +643,13 @@ header .title span::after {
     margin-top: 25px;
     margin-left: 30px;
     font-size: 1.5em;
-	white-space: nowrap;
 }
 
 .owl-carousel .item span {
     position: absolute;
     margin-left: 30px;
     color: #bc9e6b;
-    top: 300px;
+    top: 320px;
 }
 
 .owl-carousel .item span span {
@@ -866,6 +875,7 @@ header .title span::after {
     z-index: 10;
     right: -40%;
     top: 80px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .special-offers .right .countdown .flex {
@@ -1064,6 +1074,7 @@ header .title span::after {
     margin-right: 34px;
     font-size: 1.3em;
     padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 .featured-products .categories li:last-child {
@@ -1106,6 +1117,7 @@ header .title span::after {
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: lightgray;
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -1117,7 +1129,7 @@ header .title span::after {
 
 .featured-products .grid .grid-item p {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .featured-products .grid .grid-item span {
@@ -1195,6 +1207,7 @@ header .title span::after {
 
 .news .letter div p {
 	line-height: 1.5em;
+	font-family: 'Roboto', sans-serif;
 }
 
 .news .letter .email {
@@ -1224,6 +1237,7 @@ header .title span::after {
     margin-right: 0;
     margin-left: 0;
     padding-left: 30px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .news .latest h2 {
@@ -1276,7 +1290,9 @@ header .title span::after {
 
 .news .latest .timeline .entry .date p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .news .latest .timeline .entry .content {
@@ -1292,11 +1308,12 @@ header .title span::after {
     font-size: 1.3em;
     font-weight: bold;
 	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .news .latest .timeline .entry .content p {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 0;
 }
 
@@ -1304,7 +1321,7 @@ header .title span::after {
     display: inline-block;
     text-decoration: none;
     color: #bc9e6b;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 35px;
 }
 
@@ -1313,12 +1330,10 @@ header .title span::after {
     justify-content: space-between;
     margin-left: 19.5%;
     margin-right: 19.5%;
-    height: 100px;
 }
 
 .logos img {
     width: 100%;
-    height: 100px;
 }
 
 #instafeed {
@@ -1396,7 +1411,7 @@ footer .about .logo {
     margin-bottom: 40px;
 }
 
-footer .about p:first-of-type {
+footer .about p.about-us {
     color: #949494;
     font-size: 0.9em;
 	line-height: 1.5em;
@@ -1414,6 +1429,10 @@ footer .about .address:before {
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+footer .about .a {
+	text-decoration: none;
 }
 
 footer .about .number {
@@ -1444,8 +1463,21 @@ footer .about .email::before {
     background-repeat: no-repeat;
 }
 
-footer .about img:last-child {
+footer .about .social {
+	display: flex;
+	justify-content: space-between;
 	margin-top: 20px;
+	width: 216px;
+	height: 30px;
+}
+
+footer .about .social a {
+	width: 30px;
+	height: 30px;
+}
+
+footer .about .social a img {
+	height: 100%;
 }
 
 footer .working-hours, footer .shopping, footer .more-links {
@@ -1472,6 +1504,7 @@ footer .more-links {
 
 footer .working-hours h3, footer .shopping h3, footer .more-links h3 {
     margin-top: 65px;
+	margin-bottom: 0;
     color: #ffffff;
 	font-size: 1.6em;
 	font-family: 'Roboto', sans-serif;
@@ -1490,7 +1523,7 @@ footer .working-hours hr, footer .shopping hr, footer .more-links hr {
     border-color: #bc9e6b;
     margin-left: 0;
     margin-top: 15px;
-    margin-bottom: 55px;
+    margin-bottom: 70px;
 }
 
 footer .copyright {
@@ -1607,7 +1640,7 @@ footer .payment {
 
     #owl-demo .item {
         width: 200px;
-        height: 200px;
+        height: 240px;
     }
 
     .owl-carousel .item .wishlist {
@@ -1636,7 +1669,7 @@ footer .payment {
     .owl-carousel .item span {
         margin-left: 15px;
         font-size: 0.8em;
-        top: 180px;
+        top: 210px;
     }
 
     .owl-carousel .item span span {
@@ -1794,6 +1827,35 @@ footer .payment {
     .special-offers .flexslider {
         height: 300px;
     }
+	
+	.logos {
+        margin-top: 120px;
+        margin-left: 10%;
+        margin-right: 10%;
+        min-height: 100px;
+        flex-wrap: wrap;
+    }
+
+    .logos a {
+        flex-basis: 33%;
+    }
+	
+	footer {
+		height: 950px;
+	}
+	
+	footer .payment {
+        position: absolute;
+        top: 880px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer .copyright {
+        width: 303px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 830px) {
@@ -1808,7 +1870,7 @@ footer .payment {
         margin-left: 0;
 		text-align: center;
 		font-size: 1.1em;
-        width: 372px;
+        width: 380px;
         height: 50px;
         top: 0px;
         left: 50%;
@@ -1990,7 +2052,7 @@ footer .payment {
         margin-right: 1.5%;
     }
 
-    .logos {
+    /*.logos {
         margin-top: 120px;
         margin-left: 10%;
         margin-right: 10%;
@@ -2000,10 +2062,10 @@ footer .payment {
 
     .logos a {
         flex-basis: 33%;
-    }
+    }*/
 
     #instafeed {
-        margin-top: 120px;
+        margin-top: 80px;
         flex-wrap: wrap;
         min-height: 160px;
     }
@@ -2017,7 +2079,7 @@ footer .payment {
     }
 
     footer {
-        top: 440px;
+        top: 400px;
         height: 1600px;
     }
 
@@ -2062,16 +2124,6 @@ footer .payment {
     }
 
     footer .payment {
-        position: absolute;
-        margin: 0 auto;
         top: 1520px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    footer .copyright {
-        width: 303px;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }

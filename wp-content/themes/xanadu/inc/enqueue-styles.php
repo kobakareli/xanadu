@@ -10,9 +10,9 @@ function redberry_styles() {
 	$uri = get_template_directory_uri();
 	
 	// Reset CSS
-	wp_register_style( 'reset_css', $uri . '/css/reset.css', array(), '1', 'all' );
+	//wp_register_style( 'reset_css', $uri . '/css/reset.css', array(), '1', 'all' );
 	// Fonts CSS
-	wp_register_style( 'fonts_css', $uri . '/css/fonts.css', array(), '1', 'all' );
+	//wp_register_style( 'fonts_css', $uri . '/css/fonts.css', array(), '1', 'all' );
 	// Flexslider CSS
 	wp_register_style( 'flexslider_css', $uri . '/css/flexslider.css', array(), '1', 'all' );
 	// Google fonts CSS
@@ -37,9 +37,9 @@ function redberry_styles() {
 	wp_register_style( 'style_css', $uri . '/style.css', array(), '1', 'all' );
 
 	// Reset CSS
-	wp_enqueue_style( 'reset_css' );
+	//wp_enqueue_style( 'reset_css' );
 	// Fonts CSS
-	wp_enqueue_style( 'fonts_css' );
+	//wp_enqueue_style( 'fonts_css' );
 	// Flexslider Css
 	wp_enqueue_style( 'flexslider_css' );
 	// Google fonts CSS
