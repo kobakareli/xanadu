@@ -1885,7 +1885,7 @@ footer .payment {
         left: 50%;
         width: 40px;
         height: 40px;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 
     .special-offers .flexslider .flex-direction-nav .flex-next {
@@ -1894,7 +1894,7 @@ footer .payment {
         width: 40px;
         height: 40px;
         left: 50%;
-        transform: translateX(50%);
+        transform: translateX(0%);
     }
 	
 	.logos {
@@ -2052,7 +2052,7 @@ footer .payment {
     }
 
     .special-offers .flexslider .flex-viewport .slides .right .countdown {
-        top: -95px;
+        top: -90px;
         left: 150px;
         width: 62%;
         height: 80px;
@@ -2091,20 +2091,20 @@ footer .payment {
 
     .special-offers .flexslider .flex-direction-nav .flex-prev {
         position: absolute;
-        top: 0px;
+        top: 20px;
         left: 50%;
         width: 40px;
         height: 40px;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 
     .special-offers .flexslider .flex-direction-nav .flex-next {
         position: absolute;
-        top: 0px;
+        top: 20px;
         width: 40px;
         height: 40px;
         left: 50%;
-        transform: translateX(50%);
+		transform: translateX(0%);
     }
 
     .featured-products .select-categories {
