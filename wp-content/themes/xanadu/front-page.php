@@ -182,7 +182,6 @@
 						if ($interval > 0) :
 					?>
 							<li>
-								<!-- <a href=""><img <?php the_post_thumbnail( 'medium' ); ?> </a> -->
 								<a class="offer-image" href=""><div style = "background: url('<?php the_post_thumbnail_url( 'medium' ); ?>') no-repeat center center; background-size: cover;"></div></a>
 								<div class="right">
 									<div class="text">
