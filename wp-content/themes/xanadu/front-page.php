@@ -178,7 +178,6 @@
 						$date = strtotime($date);
 						$now = strtotime("now");
 						$interval = $date - $now;
-						echo $interval;
 						if ($interval > 0) :
 					?>
 							<li>
