@@ -823,18 +823,17 @@ header .title span::after {
     height: 605px;
     margin-left: 19%;
     margin-right: 19%;
-    margin-bottom: 115px;
+    margin-bottom: 175px;
 }
 
-.special-offers .flexslider .flex-viewport .slides img {
-    display: inline-block;
-    width: 48%;
-    height: 575px;
-    float: left;
-    z-index: -1;
-    margin: 10px;
-    margin-bottom: 20px;
-    box-shadow: 2px 8px 8px 8px rgba(0,0,0,0.2);
+.special-offers .flexslider .flex-viewport .slides a.offer-image div {
+	display: inline-block;
+	width: 48%;
+	padding-top: 50%;
+	margin: 10px;
+	margin-bottom: 20px;
+	float: left;
+	box-shadow: 2px 8px 8px 8px rgba(0,0,0,0.2);
 }
 
 .special-offers .right {
@@ -1228,6 +1227,7 @@ header .title span::after {
     color: #ffffff;
     outline: 0;
     border: none;
+	cursor: pointer;
 }
 
 .news .latest {
@@ -1570,6 +1570,11 @@ footer .payment {
 }
 
 @media (max-width: 1780px) {
+	
+	.special-offers .circles .largest, .special-offers .circles .large {
+		display: none;
+	}
+	
     footer {
         top: 209px;
         height: 900px;
@@ -1712,12 +1717,12 @@ footer .payment {
 
     .special-offers .flexslider .flex-direction-nav .flex-prev {
         left: 53%;
-        top: 400px;
+        top: 300px;
     }
 
     .special-offers .flexslider .flex-direction-nav .flex-next {
         left: 65%;
-        top: 400px;
+        top: 300px;
     }
 
     .news {
@@ -1737,6 +1742,19 @@ footer .payment {
         height: 460px;
 		padding-left: 0;
     }
+	
+	.special-offers {
+		height: 580px;
+	}
+	
+	.special-offers .circles .largest, .special-offers .circles .large {
+		display: none;
+	}
+	
+	.special-offers .flexslider {
+		height: 580px;
+		margin-bottom: 0px;
+	}
 }
 
 @media (max-width: 1195px) {
@@ -1780,52 +1798,97 @@ footer .payment {
         background-size: cover;
         background-repeat: no-repeat;
     }
-
-    .special-offers .right .text p:last-child {
-        font-size: 0.8em;
-    }
-
-    .special-offers .flexslider .flex-viewport .slides img {
-        height: 300px;
-        margin-top: 15px;
-    }
-
-    .special-offers .flexslider .flex-direction-nav .flex-prev {
-        top: 293px;
-        left: 53%;
-        width: 40px;
-        height: 40px;
-    }
-
-    .special-offers .flexslider .flex-direction-nav .flex-next {
-        top: 293px;
-        left: 60.5%;
-        width: 40px;
-        height: 40px;
-    }
-
-    .special-offers .right .countdown .flex p:first-child {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .special-offers .right .countdown .flex p:last-child {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .special-offers .circles img {
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .special-offers .circles img.largest, .special-offers .circles img.large {
-        display: none;
+	
+	.special-offers {
+        margin-top: 100px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        height: 700px;
     }
 
     .special-offers .flexslider {
-        height: 300px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        width: 97%;
+        height: 700px;
+		margin-bottom: 0;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides a.offer-image div {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+	
+	.special-offers .flexslider {
+		margin-top: 50px;
+	}
+
+    .special-offers .flexslider .flex-viewport .slides a:first-child {
+        display: block;
+        position: static;
+        max-height: 400px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right {
+        display: block;
+        margin: 0 20%;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .countdown {
+        top: -110px;
+        left: 250px;
+        width: 62%;
+        height: 80px;
+        font-size: 0.6em;
+    }
+	
+	.special-offers .right .countdown .flex p:first-child {
+        font-size: 3em;
+		padding-left: 10px;
+		padding-right: 10px;
+    }
+
+    .special-offers .right .countdown .flex p:last-child {
+        font-size: 1em;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .countdown .flex .line {
+        height: 50px;
+    }
+
+    .special-offers .flexslider .flex-viewport .slides .right .text {
+        margin-left: 0;
+        top: 0;
+        left: -50px;
+    }
+
+    .special-offers .flexslider .flex-direction-nav {
+        position: relative;
+        top: -60px;
+        width: 100%;
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-prev {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateX(-50%);
+    }
+
+    .special-offers .flexslider .flex-direction-nav .flex-next {
+        position: absolute;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        transform: translateX(50%);
     }
 	
 	.logos {
@@ -1895,6 +1958,7 @@ footer .payment {
         height: 160px;
         margin-left: 1.5%;
         margin-right: 1.5%;
+		margin-top: 20px;
         text-align: left;
     }
 
@@ -1949,7 +2013,7 @@ footer .payment {
         margin-top: 100px;
         margin-left: 1.5%;
         margin-right: 1.5%;
-        height: 650px;
+        height: 600px;
     }
 
     .special-offers .flexslider {
@@ -1957,9 +2021,10 @@ footer .payment {
         margin-right: 1.5%;
         width: 97%;
         height: 600px;
+		margin-bottom: 0;
     }
 
-    .special-offers .flexslider .flex-viewport .slides img {
+    .special-offers .flexslider .flex-viewport .slides a.offer-image div {
         display: block;
         position: static;
         width: 100%;
@@ -1987,6 +2052,16 @@ footer .payment {
         height: 80px;
         font-size: 0.6em;
     }
+	
+	.special-offers .right .countdown .flex p:first-child {
+        font-size: 2.5em;
+		padding-left: 5px;
+		padding-right: 5px;
+    }
+
+    .special-offers .right .countdown .flex p:last-child {
+        font-size: 0.6em;
+    }
 
     .special-offers .flexslider .flex-viewport .slides .right .countdown .flex .line {
         height: 40px;
@@ -1996,6 +2071,10 @@ footer .payment {
         margin-left: 0;
         top: 0;
         left: -50px;
+    }
+	
+	.special-offers .flexslider .flex-viewport .slides .right .text p:last-child {
+        font-size: 0.8em;
     }
 
     .special-offers .flexslider .flex-direction-nav {
