@@ -187,7 +187,9 @@ jQuery(document).ready(function( $ ) {
     initIsotope : function() {
         var $grid = $('.grid').isotope({
             itemSelector: '.grid-item',
-            layoutMode: 'fitRows'
+			masonry: {
+				isFitWidth: true
+			  }
         });
 
         $('.featured-products .categories li').click(function(e) {

@@ -320,7 +320,8 @@
             <option data-filter=".on-sale" value=".on-sale">ON SALE</option>
             <option data-filter=".top-rate" value=".top-rate">TOP RATE</option>
         </select>
-        <div class="grid">
+        <div class="isotope-container">
+			<div class="grid">
 			<?php 
 				$args = array(
 					'post_type' => 'furniture',
@@ -338,6 +339,7 @@
 					</a>
 			<?php endwhile; wp_reset_postdata(); endif;?>
         </div>
+		</div>
         <a href=""><p class="view-all">VIEW ALL</p></a>
     </div>
     <div class="news">
